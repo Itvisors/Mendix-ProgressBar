@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="itvisors.reactstaticprogressbar.ReactStaticProgressBar" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+
+    <name>React Static Progress Bar</name>
+    <description>a static progress bar made in react to show how far a certain value is </description>
+    <icon/>
+
+    <properties>
+        <propertyGroup caption="General">
+            <systemProperty key="Label"/>
+            <systemProperty key="Visibility"/>
+            <systemProperty key="Editability"/>
+
+            <property key="valueAttribute" type="attribute" required="true">
+                <caption>Attribute (path)</caption>
+                <description>The attribute that stores the value that the static progress bar is based on</description>
+                <attributeTypes>
+                    <attributeType name="Integer"/>
+                    <attributeType name="Decimal"/>
+                </attributeTypes>
+            </property>
+
+            <property key="startValue" type="expression" required = "true" defaultValue="0">
+                <caption>Start value</caption>
+                <description>The value the progress bar should start on. Can be a decimal</description>
+                <returnType type="Decimal" />
+            </property>
+
+            <property key="endValue" type="expression" required = "true" defaultValue="100">
+                <caption>End value</caption>
+                <description>The value the progress bar should end on. Can be a decimal</description>
+                <returnType type="Decimal" />
+            </property>
+
+            <property key="colorAttribute" type="attribute" required = "true">
+                <caption>Color Attribute (path)</caption>
+                <description>The attribute that stores the color in a string as a hex code</description>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>
+
+            <property key="showLabels" type="boolean" required = "true" defaultValue="true">
+                <caption>Show labels</caption>
+                <description>Boolean to determine if labels (start and end) should be shown</description>
+            </property>
+
+        </propertyGroup>
+    </properties>
+</widget>

@@ -1,0 +1,13 @@
+{
+  "@mendix/generator-widget": {
+    "promptValues": {
+      "organization": "ITvisors",
+      "copyright": "ITVisors (2020)",
+      "license": "Apache 2.0",
+      "author": "Paul Janssen",
+      "programmingLanguage": "javascript",
+      "platform": "web",
+      "boilerplate": "empty"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+/*
+Place your custom CSS here
+*/
+.progressBar {
+    height: 25px;
+    width: 100%;
+    color: #fff;
+    background-color: #f1f1f1;
+    font-size: 17px;
+}
+
+.valueBar{
+    height: 100%;
+    text-align: center;
+}
+
+.leftLabel{
+    height: 100%;
+    float: left;
+    color: #000;
+}
+
+.rightLabel{
+    height: 100%;
+    float: right;
+    color: #000;
+}
+
+.emptyLabel{
+    display: none;
+}
