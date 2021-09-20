@@ -4,7 +4,7 @@ Place your custom CSS here
 .progressBar {
     height: 25px;
     width: 100%;
-    color: #fff;
+    color: rgb(255, 255, 255);
     background-color: #f1f1f1;
     font-size: 17px;
 }

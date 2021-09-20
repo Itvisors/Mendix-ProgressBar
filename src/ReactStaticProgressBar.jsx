@@ -18,7 +18,8 @@ export default class ReactStaticProgressBar extends Component {
     render() {
         const startValue = Number(this.props.startValue.value);
         const endValue = Number(this.props.endValue.value);
-        const value = Number(this.props.valueAttribute.value).toFixed(2);
+        const value = Number(this.props.valueAttribute.value);
+        const calculatedPerenct = this.calculatePercent(startValue, endValue, value).toFixed(2);
         const showLabels = this.props.showLabels;
         const style = {
             backgroundColor: this.props.colorAttribute.value,
@@ -39,11 +40,16 @@ export default class ReactStaticProgressBar extends Component {
             return "";
         }
 
+        if (this.props.colorAttribute.value === undefined) {
+            console.warn("color should not be empty");
+            return "";
+        }
+
         return (
             <div>
                 <div className="progressBar">
-                    <div className="valueBar" style={style} min={startValue} max={endValue} value={value}>
-                        <span>{value + "%"} </span>
+                    <div className="valueBar" style={style} min={startValue} max={endValue} value={calculatedPerenct}>
+                        <span>{calculatedPerenct + "%"} </span>
                     </div>
                     <span className={`${showLabels ? "leftLabel" : "emptyLabel"}`}>{startValue}</span>
                     <span className={`${showLabels ? "rightLabel" : "emptyLabel"}`}>{endValue}</span>
