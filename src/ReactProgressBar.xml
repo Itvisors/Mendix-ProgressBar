@@ -15,7 +15,7 @@
             <systemProperty key="Editability"/>
 
             <property key="valueAttribute" type="attribute" required="true">
-                <caption>Attribute (path)</caption>
+                <caption>Value Attribute (path)</caption>
                 <description>The attribute that stores the value that the progress bar is based on</description>
                 <attributeTypes>
                     <attributeType name="Integer"/>
