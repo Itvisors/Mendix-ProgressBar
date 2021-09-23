@@ -1,8 +1,8 @@
 {
-  "name": "reactstaticprogressbar",
-  "widgetName": "ReactStaticProgressBar",
+  "name": "reactprogressbar",
+  "widgetName": "ReactProgressBar",
   "version": "1.0.0",
-  "description": "a static progress bar made in react to show how far a certain value is ",
+  "description": "a progress bar made in react to show how far a certain value is ",
   "copyright": "ITVisors (2020)",
   "author": "Paul Janssen",
   "config": {

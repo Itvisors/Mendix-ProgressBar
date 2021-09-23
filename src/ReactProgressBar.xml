@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<widget id="itvisors.reactstaticprogressbar.ReactStaticProgressBar" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+<widget id="itvisors.reactprogressbar.ReactProgressBar" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
         supportedPlatform="Web"
         xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
 
-    <name>React Static Progress Bar</name>
-    <description>a static progress bar made in react to show how far a certain value is </description>
+    <name>React Progress Bar</name>
+    <description>a progress bar made in react to show how far a certain value is </description>
     <icon/>
 
     <properties>
@@ -16,7 +16,7 @@
 
             <property key="valueAttribute" type="attribute" required="true">
                 <caption>Attribute (path)</caption>
-                <description>The attribute that stores the value that the static progress bar is based on</description>
+                <description>The attribute that stores the value that the progress bar is based on</description>
                 <attributeTypes>
                     <attributeType name="Integer"/>
                     <attributeType name="Decimal"/>

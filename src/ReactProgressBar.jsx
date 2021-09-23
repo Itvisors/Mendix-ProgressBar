@@ -1,7 +1,7 @@
 import { Component, createElement } from "react";
-import "./ui/ReactStaticProgressBar.css";
+import "./ui/ReactProgressBar.css";
 
-export default class ReactStaticProgressBar extends Component {
+export default class ReactProgressBar extends Component {
     constructor(props) {
         super(props);
 
